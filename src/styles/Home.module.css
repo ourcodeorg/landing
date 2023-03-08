@@ -1,0 +1,22 @@
+.heroDiv {
+  background: #07151c;
+  background-image: radial-gradient(at 47% 90.1%, #331852 0px, transparent 50%),
+    radial-gradient(at 10.3% 79.2%, #192c4a 0px, transparent 50%),
+    radial-gradient(at 91.2% 79.2%, #19335e 0px, transparent 50%);
+}
+.brandName {
+  background-color: #ff99d6;
+  background-size: 100%;
+  background-image: radial-gradient(
+      at 47% 50%,
+      hsla(223, 73%, 67%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 4% 92%, hsla(175, 85%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 55%, hsla(246, 93%, 61%, 1) 0px, transparent 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
