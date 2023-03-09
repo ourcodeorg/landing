@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <div
         className={clsx(
-          "w-screen h-screen flex flex-col justify-center items-center",
+          "h-screen w-full flex flex-col justify-center items-center",
           styles.heroDiv
         )}
       >
