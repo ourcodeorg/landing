@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <div
         className={clsx(
-          "lg:h-screen h-fit w-full flex flex-col items-center py-3",
+          "lg:h-screen h-fit w-full flex flex-col items-center justify-center py-3",
           styles.heroDiv
         )}
       >
@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className="text-7xl text-gray-200 font-bold my-3">
             Welcome to <span className={styles.brandName}>OurCode</span>
           </h1>
-          <p className="text-lg text-gray-400 text-center w-1/2">
+          <p className="text-lg text-gray-400 text-center lg:w-1/2 md:w-full">
             A place for you to find partners for personal projects, hackathons
             or research
           </p>
