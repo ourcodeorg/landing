@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { clsx } from "clsx";
+import data from "../data/Features";
+import FeatureCard from "@/components/FeatureCard";
 export default function Home() {
   return (
     <>
@@ -15,11 +17,11 @@ export default function Home() {
       </Head>
       <div
         className={clsx(
-          "h-screen w-full flex flex-col justify-center items-center",
+          "lg:h-screen h-fit w-full flex flex-col items-center py-3",
           styles.heroDiv
         )}
       >
-        <div className="w-[70%] text-center flex justify-center items-center flex-col">
+        <div className="w-[70%] text-center flex justify-center items-center flex-col mt-10">
           <h1 className="text-7xl text-gray-200 font-bold my-3">
             Welcome to <span className={styles.brandName}>OurCode</span>
           </h1>
@@ -30,6 +32,24 @@ export default function Home() {
           <button className="px-4 py-2 rounded-lg my-3 hover:scale-110 transition-all duration-150 ease-in-out font-semibold text-gray-300 bg-slate-900 border border-gray-600">
             Coming Soon
           </button>
+        </div>
+        {/* Feature section */}
+        <div className="mt-10 flex flex-col justify-center items-center w-[75%]">
+          <h1 className="text-4xl text-gray-300 font-semibold my-5">
+            Features
+          </h1>
+          <div className="flex w-full py-2 px-3 lg:justify-between flex-wrap justify-center">
+            {data.map((e, idx) => {
+              return (
+                <FeatureCard
+                  icon={e.icon}
+                  key={idx}
+                  title={e.title}
+                  description={e.description}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
